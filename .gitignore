@@ -1,3 +1,5 @@
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -270,3 +272,4 @@ fabric.properties
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,jetbrains+all
+.vscode

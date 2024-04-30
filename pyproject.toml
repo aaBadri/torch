@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "deep"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "*"
+docker = "==6.1.3"
+ipython = "==8.14.0"
+ipywidgets = "==7.7.5"
+joblib = "==1.3.1"
+matplotlib = "==3.7.2"
+numpy = "*"
+pandas = "==2.0.3"
+pytest = "==7.4.0"
+pytest-cov = "==4.1.0"
+python-dateutil = "==2.8.2"
+pytorch-lightning = "2.0.5"
+pytz = "==2023.3"
+requests = "==2.31.0"
+scikit-learn = "==1.3.0"
+seaborn = "==0.12.2"
+torchvision = "*"
+torchaudio = "*"
+tensorflow = "^2.16.1"
+transformers = "^4.40.1"
+datasets = "^2.19.0"
+scipy = "^1.13.0"
+sentencepiece = "^0.2.0"
+
+[[tool.poetry.source]]
+name = "ai_artifactory"
+url = "https://artifactory-ai.tapsi.tech/artifactory/api/pypi/pypi/simple"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
